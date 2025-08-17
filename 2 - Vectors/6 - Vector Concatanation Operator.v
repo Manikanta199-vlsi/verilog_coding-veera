@@ -6,6 +6,7 @@ module top_module (
 	//The concatenation operator can be used on both the left and right sides of assignments.
     
     wire [31:0] concat_reg; //raise an error when work with reg. Reason unknown???
+	
     assign concat_reg = {a[4:0], b[4:0], c[4:0], d[4:0], e[4:0], f[4:0], 2'b11};
     assign w = concat_reg[31:24];
     assign x = concat_reg[23:16];
